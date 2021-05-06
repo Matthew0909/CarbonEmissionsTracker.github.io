@@ -6,13 +6,16 @@
 }
 
 .tab button {
-  background-color: inherit;
-  float: left;
+  background-color: #ddd;
   border: none;
-  outline: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
   cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
+  border-radius: 16px;
 }
 
 
