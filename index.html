@@ -6,16 +6,28 @@
     <title>Carbon Emissions Tracker</title>  <! -- Tab Title -->
 </head>
 <body>
-<!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openCity(event, 'What do these mean?')">What do these mean?</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
 
-<!-- Tab content -->
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
 <div id="Home" class="tabcontent">
-  <div class="header">
+    <div class="header">
     <h1 style="font-family:verdana;font-size:20px;" align="center"> How much carbon do you emmit with your current lifestyle?</h1>  <! -- Page Title -->
 </div>
  <p align = "center"> <b> Please read the following before you use our calculator!</p>
@@ -39,8 +51,8 @@
 </script>
 </div>
 
-<div id="What do these mean?" class="tabcontent">
-   <div class="header">
+<div id="News" class="tabcontent">
+ <div class="header">
          <h1 style="font-family:verdana;font-size:20px;" align="center"> What do these mean?</h1>  <! -- Page Title -->
     </div>
  <p allign = "center"> all of our options were chosen because they are large contributors to carbon emissions in the enviroment for households. <p>
@@ -51,11 +63,53 @@
 </dl>
 </div>
 
-<div id="Tokyo" class="tabcontent">
+<div id="Contact" class="tabcontent">
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
+
+<!-- Tab content -->
+<div id="Home" class="tabcontent">
+
+</div>
+
+<div id="What do these mean?" class="tabcontent">
+  
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  
+</div>
+<div class = "headerOther">
+                           <h1 style="font-family:verdana;font-size:20px;" align="Hello! Click on any of the tabs if you "> What do these mean?</h1>  <! -- Page Title -->
+                          </div>
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
