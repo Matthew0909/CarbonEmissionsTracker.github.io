@@ -29,6 +29,21 @@
   <p>Tokyo is the capital of Japan.</p>
 </div>
 
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
 <div class="header">
     <h1 style="font-family:verdana;font-size:20px;" align="center"> How much carbon do you emmit with your current lifestyle?</h1>  <! -- Page Title -->
