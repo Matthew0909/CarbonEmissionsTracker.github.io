@@ -96,25 +96,6 @@ document.getElementById("defaultOpen").click();
 <div id="Tokyo" class="tabcontent">
   
 </div>
-<div class = "headerOther">
-                           <h1 style="font-family:verdana;font-size:20px;" align="Hello! Click on any of the tabs if you "> What do these mean?</h1>  <! -- Page Title -->
-                          </div>
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-
  
  </body>
 </html>
