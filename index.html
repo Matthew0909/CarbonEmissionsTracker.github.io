@@ -1,23 +1,58 @@
-<html lang="en">
-    <link rel="stylesheet" href="index.css">
-<div style="background-image: url('background2.jpeg');>
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Carbon Emissions Tracker</title>  <! -- Tab Title -->
-</head>
-<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home 
+#News 
+#Contact 
+#About 
 </style>
 </head>
 <body>
 
-<button class="tablink" onclick="openPage('Home', this, 'DodgerBlue')"id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('Additional Information', this, 'DodgerBlue')" >Additional Information</button>
+<button class="tablink" onclick="openPage('Home', this, 'DodgerBlue')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'DodgerBlue')" id="defaultOpen">News</button>
 <button class="tablink" onclick="openPage('Contact', this, 'DodgerBlue')">Contact</button>
 <button class="tablink" onclick="openPage('About', this, 'DodgerBlue')">About</button>
-<button class="tablink" onclick="openPage('Sources', this, 'DodgerBlue')">Sources</button>
+<button class="tablink" onclick="openPage('Sources',this,'DodgerBlue')">Sources</button>
 
 <div id="Home" class="tabcontent">
-    <div class="header">
+   <div class="header">
     <h1 style="font-family:open sans;font-size:20px;" align="center"> 1How much carbon do you emit with your current lifestyle?</h1>  <! -- Page Title -->
 </div>
  <p style="font-family:open sans;" align = "center"> <b> Please read the following before you use our calculator!</p>
@@ -41,8 +76,8 @@
 </script>
 </div>
 
-<div id="Additional Information" class="tabcontent">
- <div class="header">
+<div id="News" class="tabcontent">
+  <div class="header">
          <h1 style="font-family:verdana;font-size:20px;" align="center"> What do these mean?</h1>  <! -- Page Title -->
     </div>
  <p style="font-family:open sans;" allign = "center"> all of our options were chosen because they are large contributors to carbon emissions in the enviroment for households. <p>
@@ -54,12 +89,12 @@
 </div>
 
 <div id="Contact" class="tabcontent">
-  <h3 style="font-family:open sans;">Tokyo</h3>
+    <h3 style="font-family:open sans;">Tokyo</h3>
   <p style="font-family:open sans;">Tokyo is the capital of Japan.</p>
 </div>
 
 <div id="About" class="tabcontent">
-  <h3 style="font-family:open sans;">About</h3>
+   <h3 style="font-family:open sans;">About</h3>
   <p style="font-family:open sans;">Who we are and what we do.</p>
 </div>
 <div id="Sources" class="tabcontent">
@@ -87,6 +122,3 @@ document.getElementById("defaultOpen").click();
    
 </body>
 </html> 
- 
- </body>
-</html>
