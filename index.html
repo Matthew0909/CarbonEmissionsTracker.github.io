@@ -8,20 +8,47 @@
 <body>
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Fun')">Fun</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Home')">Fun</button>
+  <button class="tablinks" onclick="openCity(event, 'What do these mean?')">mean</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
 </div>
 
 <!-- Tab content -->
-<div id="Fun" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="Home" class="tabcontent">
+  <div class="header">
+    <h1 style="font-family:verdana;font-size:20px;" align="center"> How much carbon do you emmit with your current lifestyle?</h1>  <! -- Page Title -->
+</div>
+ <p align = "center"> <b> Please read the following before you use our calculator!</p>
+     <p> Please answer the questions in the text boxes bewlow in the format "0.00" <p>
+     <p> Please remember that the total estimated carbon emissions output is only an estimate based <u>  on the average amount of carbon emitted</u> from the goods and services listed below. <p>
+    <p> If you do not know the answer to one of the questions, leave it at it's default value.
+    <p> <u> the more accurate information you enter, teh more accurate the final value will be. </u> </p>
+    <p> Please also remember to be consistant with the input selection you chose for the time period. <p>
+    <p align = "center" style="font-size:15px;"> if you drove your car 3 hours every day and chose "days," you would input "3," whereas if you chose "weeks," you would input "21." </p>
+    <hr />
+
+<div class="calconic-calculator"  data-calculatorid="60919179d3e8b5002a874f13"></div>   <! -- Calculator -->
+<script>
+  (function() { var qs,j,q,s,d=document, gi=d.getElementById,
+  ce=d.createElement, gt=d.getElementsByTagName,
+  id="calconic_", b="https://cdn.calconic.com/static/js/";
+  if(!gi.call(d,id)) { j=ce.call(d,"script"); j.id=id; j.type="text/javascript"; j.async=true;
+  j.dataset.calconic=true;
+  j.src=b+"calconic.min.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(j,q) }
+})();
+</script>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
+<div id="mean" class="tabcontent">
+   <div class="header">
+         <h1 style="font-family:verdana;font-size:20px;" align="center"> What do these mean?</h1>  <! -- Page Title -->
+    <div>
+ <p allign = "center"> all of our options were chosen because they are large contributors to carbon emissions in the enviroment for households. <p>
+                     <p style="font-size:15px;"> The following is an explaination of why each option is listed, and what you can do to lower your carbon footprint. <p>
+<dl>
+ <dt> Transportation </dt>
+ <dd>- Transportation is a large contributing sector to global warming- this is an example of something I would say </dd>
+</dl>
 </div>
 
 <div id="Tokyo" class="tabcontent">
@@ -45,38 +72,6 @@ function openCity(evt, cityName) {
 }
 </script>
 
-<div class="header">
-    <h1 style="font-family:verdana;font-size:20px;" align="center"> How much carbon do you emmit with your current lifestyle?</h1>  <! -- Page Title -->
-</div>
- <p align = "center"> <b> Please read the following before you use our calculator!</p>
-     <p> Please answer the questions in the text boxes bewlow in the format "0.00" <p>
-     <p> Please remember that the total estimated carbon emissions output is only an estimate based <u>  on the average amount of carbon emitted</u> from the goods and services listed below. <p>
-    <p> If you do not know the answer to one of the questions, leave it at it's default value.
-    <p> <u> the more accurate information you enter, teh more accurate the final value will be. </u> </p>
-    <p> Please also remember to be consistant with the input selection you chose for the time period. <p>
-    <p align = "center" style="font-size:15px;"> if you drove your car 3 hours every day and chose "days," you would input "3," whereas if you chose "weeks," you would input "21." </p>
-    <hr />
-
-<div class="calconic-calculator"  data-calculatorid="60919179d3e8b5002a874f13"></div>   <! -- Calculator -->
-<script>
-  (function() { var qs,j,q,s,d=document, gi=d.getElementById,
-  ce=d.createElement, gt=d.getElementsByTagName,
-  id="calconic_", b="https://cdn.calconic.com/static/js/";
-  if(!gi.call(d,id)) { j=ce.call(d,"script"); j.id=id; j.type="text/javascript"; j.async=true;
-  j.dataset.calconic=true;
-  j.src=b+"calconic.min.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(j,q) }
-})();
-</script>
-
-    <hr />
-    <div class="header">
-         <h1 style="font-family:verdana;font-size:20px;" align="center"> What do these mean?</h1>  <! -- Page Title -->
-    <div>
- <p allign = "center"> all of our options were chosen because they are large contributors to carbon emissions in the enviroment for households. <p>
-                     <p style="font-size:15px;"> The following is an explaination of why each option is listed, and what you can do to lower your carbon footprint. <p>
-<dl>
- <dt> Transportation </dt>
- <dd>- Transportation is a large contributing sector to global warming- this is an example of something I would say </dd>
-</dl>
+ 
  </body>
 </html>
